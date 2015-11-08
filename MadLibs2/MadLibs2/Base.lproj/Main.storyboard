@@ -24,10 +24,16 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKN-jr-qVR">
                                 <rect key="frame" x="100" y="237" width="94" height="30"/>
                                 <state key="normal" title="Edit Template"/>
+                                <connections>
+                                    <action selector="editTemplate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tzO-tZ-eIW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d69-gX-RpG">
                                 <rect key="frame" x="100" y="275" width="104" height="30"/>
                                 <state key="normal" title="Generate Story"/>
+                                <connections>
+                                    <action selector="generateStory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FFD-93-8ky"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPt-9P-Nko">
                                 <rect key="frame" x="20" y="99" width="72" height="21"/>
@@ -68,6 +74,14 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="word1" destination="p4c-Qe-0Gf" id="Ua1-Ac-hcS"/>
+                        <outlet property="word1Label" destination="uPt-9P-Nko" id="KTM-vj-GSy"/>
+                        <outlet property="word2" destination="dKr-8S-BHO" id="olH-p9-Q4P"/>
+                        <outlet property="word2Label" destination="v0M-T1-3sV" id="1JV-e7-Xgz"/>
+                        <outlet property="word3" destination="Brt-Xo-by5" id="Q4O-qA-jYQ"/>
+                        <outlet property="word3Label" destination="nfL-Db-3yS" id="fqm-fX-Dyi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
