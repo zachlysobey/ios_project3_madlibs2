@@ -109,15 +109,15 @@
             </objects>
             <point key="canvasLocation" x="1589" y="1036"/>
         </scene>
-        <!--Story Output View Controller-->
+        <!--Generated Story-->
         <scene sceneID="awm-Jm-al8">
             <objects>
-                <viewController id="GOm-es-m77" customClass="StoryOutputViewController" customModule="MadLibs2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GOm-es-m77" userLabel="Generated Story" customClass="StoryOutputViewController" customModule="MadLibs2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ghH-gn-FXD"/>
                         <viewControllerLayoutGuide type="bottom" id="EhP-RQ-iWR"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="eqS-ZM-4Xk">
+                    <view key="view" contentMode="scaleToFill" id="eqS-ZM-4Xk" userLabel="Generated Story">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -160,6 +160,7 @@
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yk6-4w-RkW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationItem title="Main" id="hIz-BX-Ahd"/>
             </objects>
             <point key="canvasLocation" x="1057" y="1036"/>
         </scene>
