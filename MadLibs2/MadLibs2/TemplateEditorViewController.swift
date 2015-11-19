@@ -25,7 +25,6 @@ class TemplateEditorViewController: UIViewController {
     @IBOutlet weak var word2PlaceholderField: UITextField!
     @IBOutlet weak var word3LabelField: UITextField!
     @IBOutlet weak var word3PlaceholderField: UITextField!
-    
     @IBOutlet weak var storyTemplateField: UITextView!
 
     override func viewDidLoad() {
@@ -39,8 +38,9 @@ class TemplateEditorViewController: UIViewController {
 
     @IBAction func doneButtonAction(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil);
+        setUserDefaultsToFieldValues()
     }
-    
+
     func setFieldsToUserDefaults() {
         let userDefaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
         word1LabelField.text = userDefaults.objectForKey(kWord1LabelText) as? String
@@ -50,6 +50,17 @@ class TemplateEditorViewController: UIViewController {
         word3LabelField.text = userDefaults.objectForKey(kWord3LabelText) as? String
         word3PlaceholderField.text = userDefaults.objectForKey(kWord3Placeholder) as? String
         storyTemplateField.text = userDefaults.objectForKey(kStoryTemplate) as? String
+    }
+
+    func setUserDefaultsToFieldValues() {
+        let userDefaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        userDefaults.setObject(word1LabelField.text, forKey: kWord1LabelText)
+        userDefaults.setObject(word1PlaceholderField, forKey: kWord1Placeholder)
+        userDefaults.setObject(word2LabelField.text, forKey: kWord2LabelText)
+        userDefaults.setObject(word2PlaceholderField, forKey: kWord3Placeholder)
+        userDefaults.setObject(word3LabelField.text, forKey: kWord2LabelText)
+        userDefaults.setObject(word3PlaceholderField, forKey: kWord3Placeholder)
+        userDefaults.setObject(storyTemplateField, forKey: kStoryTemplate)
     }
 
 }

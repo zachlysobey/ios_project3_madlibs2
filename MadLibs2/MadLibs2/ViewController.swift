@@ -64,6 +64,10 @@ class ViewController: UIViewController {
         let defaultWord2Placeholder = "Your Adjective"
         let defaultWord3Label = "Verb"
         let defaultWord3Placeholder = "Your Verb"
+        let defaultStory: String =
+            "There once was a <word1> who liked to <word3> " +
+            "<word2> programs on his computer. That <word1> " +
+            "would <word3> so much that it hurt."
         
         let userDefaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
         
@@ -74,6 +78,7 @@ class ViewController: UIViewController {
             userDefaults.setObject(defaultWord2Placeholder, forKey: kWord2Placeholder)
             userDefaults.setObject(defaultWord3Label, forKey: kWord3LabelText)
             userDefaults.setObject(defaultWord3Placeholder, forKey: kWord3Placeholder)
+            userDefaults.setObject(defaultStory, forKey: kStoryTemplate)
         }
     }
 
