@@ -107,12 +107,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cyf-qT-G2J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1589" y="1036"/>
+            <point key="canvasLocation" x="1478" y="1036"/>
         </scene>
         <!--Generated Story-->
         <scene sceneID="awm-Jm-al8">
             <objects>
-                <viewController id="GOm-es-m77" userLabel="Generated Story" customClass="StoryOutputViewController" customModule="MadLibs2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Generated Story" id="GOm-es-m77" userLabel="Generated Story" customClass="StoryOutputViewController" customModule="MadLibs2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ghH-gn-FXD"/>
                         <viewControllerLayoutGuide type="bottom" id="EhP-RQ-iWR"/>
@@ -143,7 +143,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dzQ-Y2-VK7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245" y="337"/>
+            <point key="canvasLocation" x="499" y="343"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NED-7O-xh6">
