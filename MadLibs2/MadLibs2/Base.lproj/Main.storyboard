@@ -178,6 +178,15 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="storyTemplateField" destination="7MX-vc-TBZ" id="Nzq-mN-g5Y"/>
+                        <outlet property="word1LabelField" destination="3rN-VI-gOM" id="MS5-Qz-ZrG"/>
+                        <outlet property="word1PlaceholderField" destination="2C6-w5-7YR" id="Wk6-Cp-EUD"/>
+                        <outlet property="word2LabelField" destination="7x0-Hs-VAX" id="4Ew-z7-6os"/>
+                        <outlet property="word2PlaceholderField" destination="aHC-yx-USD" id="wHt-oK-r5D"/>
+                        <outlet property="word3LabelField" destination="HHX-LJ-lJV" id="MWA-Rw-7Gz"/>
+                        <outlet property="word3PlaceholderField" destination="8Bw-d7-bTr" id="qWH-eC-4ID"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cyf-qT-G2J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
