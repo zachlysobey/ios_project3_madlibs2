@@ -22,21 +22,25 @@ class ViewController: UIViewController {
     @IBAction func editTemplate(sender: AnyObject) {
         
     }
-    
+
     @IBAction func generateStory(sender: AnyObject) {
-        
+        self.performSegueWithIdentifier("generateStorySegue", sender: self)
+    }
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let viewController = segue.destinationViewController as! StoryOutputViewController
+        viewController.words = [
+            word1.text!,
+            word2.text!,
+            word3.text!
+        ]
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
 }
-

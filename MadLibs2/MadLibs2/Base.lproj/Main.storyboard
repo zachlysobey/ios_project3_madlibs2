@@ -34,7 +34,6 @@
                                 <state key="normal" title="Generate Story"/>
                                 <connections>
                                     <action selector="generateStory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FFD-93-8ky"/>
-                                    <segue destination="GOm-es-m77" kind="show" id="Pnj-to-Onq"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPt-9P-Nko">
@@ -78,11 +77,12 @@
                         <outlet property="word2Label" destination="v0M-T1-3sV" id="1JV-e7-Xgz"/>
                         <outlet property="word3" destination="Brt-Xo-by5" id="Q4O-qA-jYQ"/>
                         <outlet property="word3Label" destination="nfL-Db-3yS" id="fqm-fX-Dyi"/>
+                        <segue destination="GOm-es-m77" kind="show" identifier="generateStorySegue" id="DmB-pe-Mpr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057" y="337"/>
+            <point key="canvasLocation" x="1006" y="327"/>
         </scene>
         <!--Template Editor-->
         <scene sceneID="iYh-kP-hbK">
@@ -131,7 +131,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SPx-uT-ziI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1440" y="337"/>
+            <point key="canvasLocation" x="1394" y="327"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kVD-wj-qA1">
