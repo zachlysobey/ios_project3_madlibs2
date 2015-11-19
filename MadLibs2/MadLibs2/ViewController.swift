@@ -51,7 +51,9 @@ class ViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        passWordChoicesToStoryOutputViewController(segue)
+        if sender is StoryOutputViewController {
+            passWordChoicesToStoryOutputViewController(segue)
+        }
     }
     
     func setupUserDefaultsIfNil() {
