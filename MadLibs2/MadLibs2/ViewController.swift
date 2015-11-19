@@ -67,31 +67,20 @@ class ViewController: UIViewController {
         
         let userDefaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
         
-        if userDefaults.stringForKey(kWord1LabelText) == nil {
+        if !areUserDefaultsSet(userDefaults) {
             userDefaults.setObject(defaultWord1Label, forKey: kWord1LabelText)
-        }
-        
-        if userDefaults.stringForKey(kWord1Placeholder) == nil {
             userDefaults.setObject(defaultWord1Placeholder, forKey: kWord1Placeholder)
-        }
-        
-        if userDefaults.stringForKey(kWord2LabelText) == nil {
             userDefaults.setObject(defaultWord2Label, forKey: kWord2LabelText)
-        }
-        
-        if userDefaults.stringForKey(kWord2Placeholder) == nil {
             userDefaults.setObject(defaultWord2Placeholder, forKey: kWord2Placeholder)
-        }
-        
-        if userDefaults.stringForKey(kWord3LabelText) == nil {
             userDefaults.setObject(defaultWord3Label, forKey: kWord3LabelText)
-        }
-        
-        if userDefaults.stringForKey(kWord3Placeholder) == nil {
             userDefaults.setObject(defaultWord3Placeholder, forKey: kWord3Placeholder)
         }
     }
-    
+
+    func areUserDefaultsSet(userDefaults: NSUserDefaults) -> Bool {
+        return userDefaults.stringForKey(kWord1LabelText) != nil
+    }
+
     func setTextFieldPlaceholdersAndLabelsToUserDefaults() {
         let userDefaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
         
