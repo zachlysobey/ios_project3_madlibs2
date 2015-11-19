@@ -37,8 +37,7 @@ class TemplateEditorViewController: UIViewController {
     }
 
     @IBAction func doneButtonAction(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil);
-        setUserDefaultsToFieldValues()
+        confirmAndSave()
     }
 
     func setFieldsToUserDefaults() {
@@ -61,6 +60,41 @@ class TemplateEditorViewController: UIViewController {
         userDefaults.setObject(word3LabelField.text, forKey: kWord3LabelText)
         userDefaults.setObject(word3PlaceholderField.text, forKey: kWord3Placeholder)
         userDefaults.setObject(storyTemplateField.text, forKey: kStoryTemplate)
+    }
+    
+    func confirmAndSave() {
+        let alertController = UIAlertController(title: "Save changes?",
+            message: "",
+            preferredStyle: UIAlertControllerStyle.Alert)
+        
+        // Stay where we are
+        let dontSaveAction = UIAlertAction(
+            title: "Don't Save",
+            style: UIAlertActionStyle.Cancel,
+            handler: {(alertAction: UIAlertAction!) in
+                self.dismissViewControllerAnimated(true, completion: nil)
+            })
+        
+        // Exits
+        let cancelAction = UIAlertAction(
+            title: "Keep editting",
+            style: UIAlertActionStyle.Destructive,
+            handler: {(alertAction: UIAlertAction!) in })
+        
+        // Save's and Exits
+        let saveAction = UIAlertAction(
+            title: "Save",
+            style: UIAlertActionStyle.Default,
+            handler: {(alertAction: UIAlertAction!) in
+                self.setUserDefaultsToFieldValues()
+                self.dismissViewControllerAnimated(true, completion: nil)
+            })
+        
+        alertController.addAction(dontSaveAction)
+        alertController.addAction(cancelAction)
+        alertController.addAction(saveAction)
+        
+        presentViewController(alertController, animated: true, completion: nil)
     }
 
 }
