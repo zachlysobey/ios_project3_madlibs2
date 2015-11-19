@@ -89,13 +89,6 @@ class ViewController: UIViewController {
         if userDefaults.stringForKey(kWord3Placeholder) == nil {
             userDefaults.setObject(defaultWord3Placeholder, forKey: kWord3Placeholder)
         }
-//        print("what are my defaults now?")
-//        print(userDefaults.objectForKey(kWord1Placeholder) as? String)
-//        print(userDefaults.objectForKey(kWord1LabelText) as? String)
-//        print(userDefaults.objectForKey(kWord2Placeholder) as? String)
-//        print(userDefaults.objectForKey(kWord2LabelText) as? String)
-//        print(userDefaults.objectForKey(kWord3Placeholder) as? String)
-//        print(userDefaults.objectForKey(kWord3LabelText) as? String)
     }
     
     func setTextFieldPlaceholdersAndLabelsToUserDefaults() {
