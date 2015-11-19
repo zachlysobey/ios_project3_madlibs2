@@ -126,8 +126,19 @@
                     <view key="view" contentMode="scaleToFill" id="eqS-ZM-4Xk" userLabel="Generated Story">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VTi-Ci-SNS">
+                                <rect key="frame" x="20" y="149" width="280" height="269"/>
+                                <color key="backgroundColor" red="0.80288696240000001" green="1" blue="0.71221853950000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="generatedStoryOutlet" destination="VTi-Ci-SNS" id="MfI-Ws-4Lt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SPx-uT-ziI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
