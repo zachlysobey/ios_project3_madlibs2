@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     let kWord2Placeholder = "word2Placeholder"
     let kWord3LabelText = "word3LabelText"
     let kWord3Placeholder = "word3Placeholder"
+    let kStoryTemplate = "storyTemplate"
 
     @IBOutlet weak var word1: UITextField!
     @IBOutlet weak var word1Label: UILabel!

@@ -10,6 +10,15 @@ import UIKit
 
 class StoryOutputViewController: UIViewController {
 
+    // User Default Keys
+    let kWord1LabelText = "word1LabelText"
+    let kWord1Placeholder = "word1Placeholder"
+    let kWord2LabelText = "word2LabelText"
+    let kWord2Placeholder = "word2Placeholder"
+    let kWord3LabelText = "word3LabelText"
+    let kWord3Placeholder = "word3Placeholder"
+    let kStoryTemplate = "storyTemplate"
+
     var words: [String] = []
     
     @IBOutlet weak var generatedStoryOutlet: UITextView!
