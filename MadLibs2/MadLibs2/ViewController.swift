@@ -36,23 +36,23 @@ class ViewController: UIViewController {
     @IBAction func generateStory(sender: AnyObject) {
         self.performSegueWithIdentifier("generateStorySegue", sender: self)
     }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        setupUserDefaultsIfNil()
-    }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUserDefaultsIfNil()
+    }
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         setTextFieldPlaceholdersAndLabelsToUserDefaults()
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if sender is StoryOutputViewController {
+        if segue.destinationViewController is StoryOutputViewController {
             passWordChoicesToStoryOutputViewController(segue)
         }
     }
@@ -98,8 +98,8 @@ class ViewController: UIViewController {
     }
     
     func passWordChoicesToStoryOutputViewController(segue: UIStoryboardSegue) {
-        let viewController = segue.destinationViewController as! StoryOutputViewController
-        viewController.words = [
+        let storyOutputViewController = segue.destinationViewController as! StoryOutputViewController
+        storyOutputViewController.words = [
             word1.text!,
             word2.text!,
             word3.text!

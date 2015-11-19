@@ -55,12 +55,12 @@ class TemplateEditorViewController: UIViewController {
     func setUserDefaultsToFieldValues() {
         let userDefaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
         userDefaults.setObject(word1LabelField.text, forKey: kWord1LabelText)
-        userDefaults.setObject(word1PlaceholderField, forKey: kWord1Placeholder)
+        userDefaults.setObject(word1PlaceholderField.text, forKey: kWord1Placeholder)
         userDefaults.setObject(word2LabelField.text, forKey: kWord2LabelText)
-        userDefaults.setObject(word2PlaceholderField, forKey: kWord3Placeholder)
-        userDefaults.setObject(word3LabelField.text, forKey: kWord2LabelText)
-        userDefaults.setObject(word3PlaceholderField, forKey: kWord3Placeholder)
-        userDefaults.setObject(storyTemplateField, forKey: kStoryTemplate)
+        userDefaults.setObject(word2PlaceholderField.text, forKey: kWord2Placeholder)
+        userDefaults.setObject(word3LabelField.text, forKey: kWord3LabelText)
+        userDefaults.setObject(word3PlaceholderField.text, forKey: kWord3Placeholder)
+        userDefaults.setObject(storyTemplateField.text, forKey: kStoryTemplate)
     }
 
 }
